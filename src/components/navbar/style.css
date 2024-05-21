@@ -1,0 +1,191 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg_color_alt);
+  z-index: 2;
+  display: block;
+}
+
+nav.remove {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav .container .logo img {
+  width: 100px;
+}
+
+nav .container .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .container .wrapper .navigators_container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .container .wrapper .menu_btn {
+  display: none;
+}
+
+nav .container .wrapper .navigators_container .search_bar input {
+  border: 1px solid grey;
+  background: transparent;
+  border-radius: 5px;
+  background: var(--bg_color);
+  padding: 12px 10px;
+  outline: none;
+  width: 350px;
+}
+
+nav .container .wrapper .navigators_container .links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .container .wrapper .navigators_container .links a {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: white;
+}
+
+nav .container .wrapper .profile_section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+nav .container .wrapper .profile_section .github_url .icon {
+  font-size: 25px;
+}
+
+nav .container .wrapper .profile_section .profile_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg_color);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav .container .wrapper .profile_section .profile_container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+nav .container .wrapper .profile_section .profile_container .txt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav .container .wrapper .profile_section .profile_container .txt p {
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* media queries */
+@media (max-width: 1150px) {
+  nav .container .wrapper .navigators_container {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    transition: 0.4s ease;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--bg_color_alt);
+    align-items: unset;
+    padding-top: 20px;
+    border-left: 1px solid rgb(73, 72, 72);
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  nav .container .wrapper .navigators_container.active {
+    right: 0;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    background: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: 0.4s ease;
+  }
+
+  .overlay.active {
+    opacity: 0.4;
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  nav .container .wrapper .navigators_container .close {
+    padding-left: 20px;
+  }
+
+  nav .container .wrapper .navigators_container .search_bar {
+    margin: 0 20px;
+  }
+
+  nav .container .wrapper .navigators_container .links {
+    flex-direction: column;
+    gap: 0;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  nav .container .wrapper .navigators_container .links a {
+    text-align: left;
+    padding: 15px 20px;
+  }
+
+  nav .container .wrapper .navigators_container .links a:hover {
+    background: var(--bg_color);
+  }
+
+  nav .container .wrapper .menu_btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+  }
+
+  nav .container .wrapper .profile_section .github_url i {
+    font-size: 30px;
+  }
+
+  nav .container .wrapper .profile_section .profile_container .txt {
+    display: none;
+  }
+
+  nav .container .wrapper .profile_section .profile_container {
+    background: transparent;
+    padding: 0;
+  }
+}

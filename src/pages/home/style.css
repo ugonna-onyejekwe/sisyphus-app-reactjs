@@ -1,0 +1,302 @@
+/* ===========================MAIN SECTION STARTS */
+.main_wrapper {
+  margin-top: 100px;
+  display: flex;
+  gap: 5px;
+}
+
+.main_wrapper .chart_section {
+  flex: 1;
+}
+
+/* ================order book section */
+.main_wrapper .order_book_section {
+  width: 280px;
+  background: var(--bg_color_alt);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.main_wrapper .order_book_section .nav {
+  display: flex;
+  background: var(--bg_color);
+  border-radius: 10px;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.main_wrapper .order_book_section .nav p {
+  font-size: 13px;
+  text-transform: capitalize;
+  width: 50%;
+  cursor: pointer;
+  transition: 0.4s ease;
+  padding: 10px 15px;
+}
+
+.main_wrapper .order_book_section .nav p.active,
+.main_wrapper .order_book_section .nav p:hover {
+  background: var(--bg_color_alt);
+  border-radius: 10px;
+}
+
+/* ============== Filter section */
+.main_wrapper .order_book_section .filter_section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_wrapper .order_book_section .filter_section .menu_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main_wrapper .order_book_section .filter_section .menu_section .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.main_wrapper .order_book_section .filter_section .menu_section .menu.active,
+.main_wrapper .order_book_section .filter_section .menu_section .menu:hover {
+  background: rgba(53, 57, 69, 1);
+}
+
+.main_wrapper .order_book_section .filter_section .menu_section .menu .bar {
+  width: 20px;
+  height: 2px;
+  border-radius: 10px;
+  background: white;
+}
+
+.main_wrapper .order_book_section .filter_section .menu_section .menu .bar.red {
+  background: rgb(206, 16, 16);
+}
+.main_wrapper
+  .order_book_section
+  .filter_section
+  .menu_section
+  .menu
+  .bar.green {
+  background: var(--green);
+}
+
+.main_wrapper .order_book_section .filter_section .select_section {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(53, 57, 69, 1);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ================Order section */
+.main_wrapper .order_book_section .order_section {
+  margin-top: 20px;
+}
+
+.main_wrapper .order_book_section .order_section .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.main_wrapper .order_book_section .order_section .header h4 {
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  max-width: 60px;
+  width: 100%;
+}
+
+.main_wrapper .order_book_section .order_section .wrapper {
+  margin-top: 15px;
+}
+
+.main_wrapper .order_book_section .order_section .wrapper .box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.main_wrapper .order_book_section .order_section .wrapper p {
+  font-size: 13px;
+  max-width: 60px;
+  width: 100%;
+}
+
+.main_wrapper .order_book_section .order_section .price_range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.main_wrapper .order_book_section .order_section .price_range h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main_wrapper .order_book_section .order_section .price_range h3:first-child,
+.main_wrapper .order_book_section .order_section .price_range i {
+  color: var(--green);
+}
+
+/* ================Buy & sell section */
+.main_wrapper .buy_sell_section {
+  background: var(--bg_color_alt);
+  width: 280px;
+  border-radius: 5px;
+  padding: 15px;
+  height: fit-content;
+}
+
+.main_wrapper .buy_sell_section .nav {
+  background: var(--bg_color);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.main_wrapper .buy_sell_section .nav p {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 13px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.main_wrapper .buy_sell_section .nav p.active,
+.main_wrapper .buy_sell_section .nav p:hover {
+  background: var(--bg_color_alt);
+}
+
+.main_wrapper .buy_sell_section .sub_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.main_wrapper .buy_sell_section .sub_nav p {
+  text-transform: capitalize;
+  font-size: 13px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.main_wrapper .buy_sell_section .sub_nav p.active {
+  background: rgba(53, 57, 69, 1);
+}
+
+.main_wrapper .buy_sell_section .input_wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main_wrapper .buy_sell_section .input_box {
+  border: 1px solid rgb(81, 81, 81);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main_wrapper .buy_sell_section .input_box input {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 15px 0;
+}
+
+.main_wrapper .buy_sell_section .input_box input::-webkit-inner-spin-button,
+.main_wrapper .buy_sell_section .input_box input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.main_wrapper .buy_sell_section .input_box input::placeholder {
+  color: rgb(179, 175, 175);
+}
+
+.main_wrapper .buy_sell_section .input_box p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.main_wrapper .buy_sell_section .check_input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.main_wrapper .buy_sell_section .check_input input {
+  accent-color: #2764ff;
+  cursor: pointer;
+}
+
+.main_wrapper .buy_sell_section .check_input p {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.main_wrapper .buy_sell_section .total {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.main_wrapper .buy_sell_section .total p {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.main_wrapper .buy_sell_section button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #2764ff, #dd568d);
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.main_wrapper .buy_sell_section button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,75 @@
+.login_page {
+  height: 100vh;
+}
+
+.login_page nav {
+  position: relative;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.login_page nav img {
+  width: 100px;
+}
+
+.login_page .wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.login_page .wrapper .form {
+  margin-top: 150px;
+  background: var(--bg_color_alt);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.login_page .wrapper .form h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.login_page .wrapper .form .err_msg {
+  color: rgb(230, 35, 35);
+  font-size: 14px;
+}
+
+.login_page .wrapper .form .input_con {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.login_page .wrapper .form .input_con label {
+  font-size: 15px;
+}
+
+.login_page .wrapper .form .input_con input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgb(61, 61, 61);
+}
+
+.login_page .wrapper .form button {
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(to right, #2764ff, #dd568d);
+  color: white;
+  text-transform: capitalize;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.login_page .wrapper .form button:hover {
+  opacity: 0.8;
+}
